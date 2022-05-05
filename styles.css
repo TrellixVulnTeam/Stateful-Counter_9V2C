@@ -1,0 +1,21 @@
+* {
+    color: purple;
+    background-color: rgb(223, 234, 200);
+  }
+
+h1 {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.count-area{
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    font-weight: bolder;
+    size: 300;
+}
