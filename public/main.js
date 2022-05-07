@@ -3,7 +3,8 @@
 
 function increment() {
   //clicks += 1;
-  fetch("/increment").then(response => console.log(response))
+  fetch("/increment").then(response => console.log(response));
+  console.log("clicked increment");
   //document.getElementById("clicks").innerHTML = clicks;
 
 };
