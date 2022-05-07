@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 app.get('/increment', (req, res) => {
     clicks++;
-    res.send("<h1> The current count is " + clicks + " </h1>");
+    console.log(req);
   });
 
 /*
