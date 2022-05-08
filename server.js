@@ -18,6 +18,12 @@ app.get('/increment', (req, res) => {
     res.send({'clicks':clicks});
   });
 
+app.get('/decrement', (req, res) => {
+    clicks--;
+    console.log("request to decrement", clicks)
+    res.send({'clicks':clicks});
+  });
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`)
   });
