@@ -3,9 +3,9 @@
 
 function increment() {
   //clicks += 1;
-  fetch("/increment").then(response => document.getElementById("clicks").innerHTML = clicks);
+  fetch("/increment").then(response => response.json()).then(data => document.getElementById("clicks").innerHTML = data['clicks']);
 
-  console.log("checking client count", clicks);
+  //console.log("checking client count", response);
 };
 
 function decrement() {
