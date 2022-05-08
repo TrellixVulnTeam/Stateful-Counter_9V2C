@@ -6,8 +6,6 @@ function increment() {
   fetch("/increment").then(response => document.getElementById("clicks").innerHTML = clicks);
 
   console.log("checking client count", clicks);
-  document.getElementById("clicks").innerHTML = clicks;
-
 };
 
 function decrement() {
