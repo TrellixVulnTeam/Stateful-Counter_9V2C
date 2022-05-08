@@ -11,12 +11,13 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 */
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
-});
 
 app.get('/increment', (req, res) => {
-    res.sendFile('public/index.html');
     clicks++;
-    console.log(req);
+    console.log("request to increment", clicks)
+    res.send({'clicks':clicks});
+  });
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`)
   });

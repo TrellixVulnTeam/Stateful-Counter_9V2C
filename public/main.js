@@ -3,9 +3,10 @@
 
 function increment() {
   //clicks += 1;
-  fetch("/increment").then(response => console.log(response));
-  console.log("clicked increment");
-  //document.getElementById("clicks").innerHTML = clicks;
+  fetch("/increment").then(response => document.getElementById("clicks").innerHTML = clicks);
+
+  console.log("checking client count", clicks);
+  document.getElementById("clicks").innerHTML = clicks;
 
 };
 
